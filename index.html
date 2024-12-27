@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .style-tag {
+            color: green;
+            font-style: italic;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="header">Демонстрація роботи CSS</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2 id="styleexamples">Приклади стилів</h2>
+            <p class="inline-style" style="color: blue; font-weight: bold; font-size: 14px;">
+                Цей текст стилізовано через inline.
+            </p>
+            <p class="style-tag position">Цей текст стилізовано через тег &lt;style&gt; у секції заголовку; Використано
+                position для зміщення тексту.</p>
+            <p class="external-style">Цей текст стилізовано через зовнішній файл CSS.</p>
+        </section>
+
+        <section>
+            <h2>Обтікання зображення</h2>
+            <div class="float-container">
+                <img src="images/1.jpg" alt="Зображення" class="image">
+                <p>Це текст, що обтікає картинку</p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="highlight" id="navigation">Меню навігації</h2>
+            <nav class="vertical-menu">
+                <ul>
+                    <li><a href="#header" class="active">Верх сторінки</a></li>
+                    <li><a href="#styleexamples">Приклади стилів</a></li>
+                    <li><a href="#navigation">Меню навігації</a></li>
+                    <li><a href="#button">Кнопка з анімацією</a></li>
+                    <li><a href="#footer">Низ сторінки</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section>
+            <h2 id="button">Кнопка з анімацією</h2>
+            <button class="bouncing-button">Button</button>
+        </section>
+    </main>
+
+    <footer>
+        <p id="footer">Виконав студент КІУКІ-22-4 Конарєв І. В.</p>
+    </footer>
+</body>
+
+</html>
